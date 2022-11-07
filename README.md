@@ -1,4 +1,4 @@
-# Poke-Routes
+# Poke-Router
 
 Olá galera, bem-vindos a revisão sobre ciclos de vida dos componentes, react router e localstorage.
 
