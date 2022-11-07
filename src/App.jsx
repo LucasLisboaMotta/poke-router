@@ -1,12 +1,17 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import PokeDetail from './pages/PokeDetail';
+import PokeFavorites from './pages/PokeFavorites';
+import PokeList from './pages/PokeList';
 
 class App extends React.Component {
   render() {
     return (
-      <>
-        <h1>Poke-Router</h1>
-        <input type="checkbox" />
-      </>
+      <Switch>
+        <Route exact path="/list" component={ PokeList } />
+        <Route exact path="/detail/:id" component={ PokeDetail } />
+        <Route exact path="/favorites" component={ PokeFavorites } />
+      </Switch>
     );
   }
 }
