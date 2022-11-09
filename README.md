@@ -114,3 +114,42 @@ Na pagina de detalhes, o input deve ter a logica de remover o pokemon favorito d
 ## 8 - Listar todos os pokemons favoritos na pagina Favorites
 
 Na pagina de favoritos, deve ser listado todos os pokemons presentes no localStorage
+
+## 9 - Criar barra de busca no header
+
+No componente header deve ser criado um input que recebe a busca feito pelo usuario
+
+## 10 - Realizar a busca ao clicar no barra de busca do header
+
+Ao se clickar na barra de busca do header, a pagina deve ser redirecionada para a rota `/list` e ser realizado a busca do pokemon
+
+A busca deve ser feito na pela url
+
+`https://pokeapi.co/api/v2/pokemon/${id}`
+
+Essa url aceita tanto o nome quanto o id do pokemon, ela dara um retorno semelhante a esse
+
+```json
+{
+  "abilities": [⇔],
+  "base_experience": 101,
+  "forms": [⇔],
+  "game_indices": [⇔],
+  "height": [⇔],
+  "held_items": [⇔],
+  "id": 132,
+  "is_default": true,
+  "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/132/encounters",
+  "moves": [⇔],
+  "name": "ditto",
+  "order": 214,
+  "past_types": [⇔],
+  "species": {⇔},
+  "sprites": {⇔},
+  "stats": [⇔],
+  "types": [⇔],
+  "weight": 40
+}
+```
+
+*Dica - a api deve ser feito com letras minusculas

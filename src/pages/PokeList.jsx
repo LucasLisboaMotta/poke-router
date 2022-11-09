@@ -9,7 +9,7 @@ class PokeList extends React.Component {
   };
 
   async componentDidMount() {
-    const pokemons = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10000&offset=0');
+    const pokemons = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151&offset=0');
     const resolvePokemons = await pokemons.json();
     this.setState({ pokeList: resolvePokemons.results });
   }
